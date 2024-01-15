@@ -1,0 +1,22 @@
+{
+  "name": "session1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "//": "Change either of line 8 or 9 to test for npm test ",
+    "runTest": "npx playwright test",
+    "test": "cucumber-js test",
+    "report": "npx ts-node helper/report.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.1.0",
+    "@playwright/test": "^1.40.1",
+    "@types/node": "^20.10.6",
+    "multiple-cucumber-html-reporter": "^3.6.0",
+    "ts-node": "^10.9.2"
+  }
+}
