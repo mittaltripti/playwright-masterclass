@@ -1,0 +1,25 @@
+{
+    "default":{
+        "tags":"@passScenario or @failScenario",
+        "formatOptions":{
+            "snippetInterface": "async-await"
+                },
+        "paths": [
+            "tests/features"
+        ],
+        "require": [
+            "tests/steps_hooks/*.ts",
+            "hooks/*.ts"
+        ],
+        "dryRun": false,
+        "requireModule":[
+            "ts-node/register"
+        ],
+        "format":[
+            "progress-bar",
+            "html:test-results/cucumber-report.html",
+            "json:test-results/cucumber-report.json"
+        ]
+
+    }
+}
